@@ -5,17 +5,27 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public float resetDistanceY;
+    public int lines = 4;
+    public float[] roadLinesCentersX;
+
+    SpawnManager spawnManager;
+    PrefabStorage prefabStorage;
 
 
-    // Start is called before the first frame update
+    public void SpawnObstacles(float roadLineCenterY)
+    {
+        spawnManager.SpawnObjects(roadLineCenterY);
+    }
+
+
     void Start()
     {
         Road.manager = this;
-    }
+        SpawnManager.manager = this;
 
-    // Update is called once per frame
-    void Update()
-    {
+        prefabStorage = GetComponent<PrefabStorage>(); // вытаскиваем скрипт из объекта на котором этот скрипт
+        SpawnManager.prefabStorage = prefabStorage;
         
+        spawnManager = new SpawnManager();  // создаем экземпляр класса                      
     }
 }

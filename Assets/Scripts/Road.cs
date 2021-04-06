@@ -19,15 +19,19 @@ public class Road : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (manager == null) return; 
+        // если менеджер еще не пришел - делать ничего нельзя
+
         var distToCamera = Camera.main.transform.position -
             transform.position;
         if (distToCamera.y < manager.resetDistanceY) return;
-        OvertakePlayer();  // Обгоняем игрока
+        OvertakePlayer();  // Обгоняем игрока по выходу за пределы камеры
     }
 
     private void OvertakePlayer()
     {
         transform.position += manager.resetDistanceY *
             Vector3.up + startPosition;
+        manager.SpawnObstacles(transform.position.y);
     }
 }

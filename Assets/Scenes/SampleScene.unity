@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08eeecefc16f0eb4cbb43387a9096593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetDistanceY: 4
+  resetDistanceY: 10
 --- !u!1 &1478359295
 GameObject:
   m_ObjectHideFlags: 0
