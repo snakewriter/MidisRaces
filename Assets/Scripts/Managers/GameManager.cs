@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject[] obsPrefabs;
     public float[] linesCentersX;
+    public float roadHeight = 6;
     public float roadResetDisY;
     public float roadResetShift;
     public int lines = 4;

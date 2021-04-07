@@ -60,8 +60,11 @@ public class Road : MonoBehaviour
 
     private void CreateObstacle(float x, GameObject prefab)
     {
+        var heightRange = manager.roadHeight - 2; // половина высоты разброса координаты Y
+        var positionY = transform.position.y + heightRange *
+            (0.5f - Random.Range(0, 1f)); // разброс по середине высоты +/- ее половина
 
-        var obstPosition = new Vector3(x, transform.position.y); // задали позицию для препятствия
+        var obstPosition = new Vector3(x, positionY); // задали позицию для препятствия
         Instantiate(prefab, obstPosition, Quaternion.identity); // создали его там (позиция, угол поворота)
     }
 }
