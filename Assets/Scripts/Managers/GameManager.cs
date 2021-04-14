@@ -4,30 +4,22 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public float[] linesCentersX;
-    public float roadHeight = 6;
-    public float resetDistanceY;
-    public int lines;
-
-    SpawnManager spawnManager;
-    PrefabStorage prefabStorage;
+    public UIManager uiManager;
+    public Player player;
 
 
-    
-    public void SpawnObstacles(float spawnCenterY)
+    Score score = new Score();
+
+
+    public void HandleCollision(GameObject gameObject)
     {
-        spawnManager.SpawnObjects(spawnCenterY);
+        // Здесь должен быть код, который обработает столкновение
     }
 
 
-
-    void Start()
+    
+    void Update()
     {
-        spawnManager = new SpawnManager();
-        prefabStorage = GetComponent<PrefabStorage>();
-
-        Road.manager = this;
-        SpawnManager.manager = this;
-        SpawnManager.prefabStorage = prefabStorage;
+        
     }
 }

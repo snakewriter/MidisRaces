@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnManager 
 {
-    public static GameManager manager;
+    public static ScriptsManager manager;
     public static PrefabStorage prefabStorage;
 
     float spawnCenterY;
