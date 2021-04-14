@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameManager gameManager;
     public float steeringSpeed;
     public float accBrakeSpeed;
     public float moveSpeed;
