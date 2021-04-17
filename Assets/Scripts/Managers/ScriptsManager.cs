@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class ScriptsManager : MonoBehaviour
 {
     public float resetDistanceY;
     public int lines = 4;
+    public float roadHeight = 6;
     public float[] roadLinesCentersX;
 
     SpawnManager spawnManager;

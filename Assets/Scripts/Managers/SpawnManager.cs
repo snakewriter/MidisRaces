@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnManager // здесь происходит правильный спаун
 {
-    public static GameManager manager;
+    public static ScriptsManager manager;
     public static PrefabStorage prefabStorage;
 
     float roadLineCenterY; // середина высоты дорожного сегмента
@@ -45,9 +45,10 @@ public class SpawnManager // здесь происходит правильны�
 
     private void CreateObj(float positionX, GameObject prefab)
     {
-        // позднее здесь будет разброс по высоте
-
-        var objPosition = new Vector3(positionX, roadLineCenterY);
-        Object.Instantiate(prefab, objPosition, Quaternion.identity);
+        var spawnHeightRange = manager.roadHeight - 1; // Задаем величину разброса по высоте дороги
+        // середина высоты дороги +/- половина величины разброса
+        var positionY = roadLineCenterY + spawnHeightRange * (0.5f - Random.Range(0, 1f));
+        var objPosition = new Vector3(positionX, positionY); // конечная позиция препятствия
+        Object.Instantiate(prefab, objPosition, Quaternion.identity); // препятствие появляется
     }
 }

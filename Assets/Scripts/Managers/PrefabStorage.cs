@@ -9,7 +9,7 @@ public class PrefabStorage : MonoBehaviour
 
     public GameObject GetRandomPrefab()
     {
-        return prefabs[Random.Range(0, prefabs.Length - 1)];
+        return prefabs[Random.Range(0, prefabs.Length)];
     }
 
 

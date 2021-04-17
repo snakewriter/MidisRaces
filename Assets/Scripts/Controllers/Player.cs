@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameManager gameManager;
     public float steeringSpeed = 0.3f;
     public float gasBrakeSpeed = 1f;
     public float moveSpeed = 3f;
