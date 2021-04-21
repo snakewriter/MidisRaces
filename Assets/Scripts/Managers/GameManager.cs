@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
 
     public void HandleCollision(GameObject gameObject)
     {
-        // Здесь должен быть код, который обработает столкновение
+        if (gameObject.tag == "Bonus") TakeBonus(gameObject);
+        else if (gameObject.tag == "Obstacle") StopGame();
     }
 
 
@@ -21,5 +22,19 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void TakeBonus(GameObject gameObject)
+    {
+        var bonus = gameObject.GetComponent<Bonus>(); // Получили контейнер с "ценником"
+        score.points += bonus.points; // подсчитали число с "ценника" в счетчик
+
+        Destroy(gameObject);
+    }
+
+    void StopGame()
+    {
+        uiManager.StopGame();
+        player.gameover = true;
     }
 }
