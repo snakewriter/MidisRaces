@@ -345,7 +345,7 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 20
-  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 1
@@ -540,10 +540,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a83d3898399be1408a430035f5b3778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabs:
+  items:
   - {fileID: 7427686751621623539, guid: 126657edb5d893840b4c1433f53eecee, type: 3}
   - {fileID: 4564369650847749944, guid: 90c5fef85fb26764293a883170bf9edc, type: 3}
   - {fileID: 4080078146800495989, guid: 2cceb42b3c7e28348a8a4ee1054ba50b, type: 3}
+  - {fileID: 435639259192416955, guid: 3d53d6b73531a5a4e91cd4f93678e15b, type: 3}
+  cars:
+  - {fileID: 3146397653709346836, guid: f378b90cc01d0644f8a5a330bbdf3654, type: 3}
+  - {fileID: 5769699553619157852, guid: 16f7a601828905e4c80440244d8c454f, type: 3}
+  - {fileID: 435639259192416955, guid: 3d53d6b73531a5a4e91cd4f93678e15b, type: 3}
+  - {fileID: 4086570626138032163, guid: f17e35f6dbea82a418806a86605df8e8, type: 3}
+  - {fileID: 9091416734030750003, guid: d57d7df4aa272bc4daa2cf98bad9a534, type: 3}
+  - {fileID: 970222591181574096, guid: f245f1dffc11f2c45a094f36a35d3931, type: 3}
+  - {fileID: 6351023095566639467, guid: 4fd5b54c9de718c4bae57e9357844309, type: 3}
 --- !u!114 &956878758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,7 +978,7 @@ MonoBehaviour:
   gameManager: {fileID: 956878758}
   steeringSpeed: 2
   gasBrakeSpeed: 1
-  moveSpeed: 10
+  moveSpeed: 5
 --- !u!212 &1619164681
 SpriteRenderer:
   m_ObjectHideFlags: 0

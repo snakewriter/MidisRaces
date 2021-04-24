@@ -55,15 +55,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Data\Score.cs" />
+    <Compile Include="Assets\Scripts\Data\Bonus.cs" />
     <Compile Include="Assets\Scripts\Managers\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\Controllers\Player.cs" />
     <Compile Include="Assets\Scripts\Managers\PrefabStorage.cs" />
+    <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Controllers\Road.cs" />
     <Compile Include="Assets\Scripts\Managers\ScriptsManager.cs" />
-    <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
-    <Compile Include="Assets\Scripts\Data\Score.cs" />
-    <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Data\Bonus.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Car.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
