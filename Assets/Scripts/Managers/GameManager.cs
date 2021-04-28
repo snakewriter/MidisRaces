@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     void StopGame()
     {
-        uiManager.StopGame();
-        player.gameover = true;
+        //uiManager.StopGame();
+        //player.gameover = true;
     }
 }

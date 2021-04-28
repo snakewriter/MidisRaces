@@ -992,6 +992,19 @@ MonoBehaviour:
   - {fileID: 8820500966899602915, guid: 5bf68804f38744141a913f6377567f73, type: 3}
   - {fileID: 3565549103450128587, guid: 0f0855cf1c78ec8458e3a78e00556cb1, type: 3}
   - {fileID: 4556929669482817372, guid: 40fc02992644c3549a6309a08a79f431, type: 3}
+  - {fileID: 1796225627373169887, guid: 6ccdbcb7df25ed94888069949bfecf4b, type: 3}
+  carsPrefabs:
+  - {fileID: 8155452392851083079, guid: 53bb80b134ee4d84a80ac5b92ce8c7d4, type: 3}
+  - {fileID: 2285743722609835869, guid: 6fd80acfefcdc3b4b8c54bc03e1d4830, type: 3}
+  - {fileID: 391765488344318124, guid: 5ae02473ef9f04e40acd7c1e8b541936, type: 3}
+  - {fileID: 1796225627373169887, guid: 6ccdbcb7df25ed94888069949bfecf4b, type: 3}
+  - {fileID: 774388689757141652, guid: 94333cb0c194a564b9ada221dc8d6f2c, type: 3}
+  - {fileID: 8808886784691624541, guid: 1729996f7350447449f7a1c4e2c35548, type: 3}
+  - {fileID: 2616574611173879079, guid: 3f36a33ef2583e54db3efdb3e78185ef, type: 3}
+  - {fileID: 2930885709658523697, guid: b24f9ed5ce7c9b74ab81fc91ac4b3bd4, type: 3}
+  - {fileID: 4493199388620948480, guid: 407e9d66aa991174bb10cb0fafedf10d, type: 3}
+  - {fileID: 7640104232688214225, guid: ebbb9915bc6647043a2a08aca6f82bda, type: 3}
+  - {fileID: 545952340752513428, guid: d4b282452e92de746ba0fd4d904b0d7c, type: 3}
 --- !u!114 &785193309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,9 +1130,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 785193309}
-  steeringSpeed: 2
+  steeringSpeed: 90
   accBrakeSpeed: 1
   moveSpeed: 10
+  offcetToCamera: 3
   gameover: 0
 --- !u!50 &1586852677
 Rigidbody2D:

@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Controllers\Road.cs" />
     <Compile Include="Assets\Scripts\Controllers\GamePage.cs" />
     <Compile Include="Assets\Scripts\Data\Score.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Car.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
