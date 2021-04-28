@@ -429,10 +429,10 @@ RectTransform:
   m_Father: {fileID: 497197968}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 294.13}
-  m_SizeDelta: {x: 380, y: 31.75}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -15.869995}
+  m_SizeDelta: {x: 0, y: 31.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424650473
 MonoBehaviour:
@@ -625,7 +625,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.23529413, g: 0.23529413, b: 0.23529413, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -988,10 +988,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33087cdb8ef4c1d4b831884330652da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstPrefabs:
+  itemsPrefabs:
   - {fileID: 8820500966899602915, guid: 5bf68804f38744141a913f6377567f73, type: 3}
   - {fileID: 3565549103450128587, guid: 0f0855cf1c78ec8458e3a78e00556cb1, type: 3}
   - {fileID: 4556929669482817372, guid: 40fc02992644c3549a6309a08a79f431, type: 3}
+  - {fileID: 4374865684495386822, guid: 2fb31e58f8714ee498563d23ba712678, type: 3}
+  carsPrefabs:
+  - {fileID: 7838179326222169459, guid: 5fb9faf48e0f46647b8dbc1f284cb821, type: 3}
+  - {fileID: 4233989911029695799, guid: 0d23db8434f0f0a48ad8e0983b350bea, type: 3}
+  - {fileID: 1297773624820007072, guid: 65c40bbec2b94c240b3232feb2ba3542, type: 3}
+  - {fileID: 4374865684495386822, guid: 2fb31e58f8714ee498563d23ba712678, type: 3}
+  - {fileID: 69076928782973045, guid: 8341bc04c3341784aad2f2fecde7d27a, type: 3}
+  - {fileID: 3656431481598962100, guid: 41be6786c2e6a1d429a83283ca207d36, type: 3}
+  - {fileID: 4719794263292237116, guid: 6972a1b1a58c26a4a88ec7407a516e2b, type: 3}
+  - {fileID: 2106257041823683457, guid: a2757fa805f0c8a46bd5578fcf1790b0, type: 3}
+  - {fileID: 9124105287074776252, guid: a4daf79b7e9dc3548a64331f07af7c14, type: 3}
+  - {fileID: 3449978137509864198, guid: b2e5cbe447f4db94caf5c6739ef63fc4, type: 3}
+  - {fileID: 5008709455992210924, guid: be161d3fcc597864499d0b25fe9e92bc, type: 3}
 --- !u!114 &785193309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,9 +1128,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 785193309}
-  steeringSpeed: 2
-  accBrakeSpeed: 1
-  moveSpeed: 1
+  offcetToCamera: 0
+  steeringSpeed: 60
+  accBrakeSpeed: 4
+  moveSpeed: 7
 --- !u!1 &1674727419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,7 +1328,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 199.03719, y: 0}
+  m_SizeDelta: {x: 206.03722, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2090273481
 MonoBehaviour:

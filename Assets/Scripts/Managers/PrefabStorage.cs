@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class PrefabStorage : MonoBehaviour
 {
-    public GameObject[] obstPrefabs;
+    public GameObject[] itemsPrefabs;
+    public GameObject[] carsPrefabs;
 
 
 
     public GameObject GetRandomPrefab()
     {
-        return obstPrefabs[Random.Range(0, obstPrefabs.Length)];
+        var prefab = itemsPrefabs[Random.Range(0, itemsPrefabs.Length)];
+        if (prefab.tag != "Car") return prefab; // Если это не машинка - возвращаем сразу
+        return carsPrefabs[Random.Range(0, carsPrefabs.Length)]; // Иначе берем произвольную машинку
     }
 }
