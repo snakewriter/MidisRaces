@@ -56,16 +56,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
-    <Compile Include="Assets\Scripts\Controllers\Player.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Gameplay\Player.cs" />
     <Compile Include="Assets\Scripts\Managers\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ScriptsManager.cs" />
     <Compile Include="Assets\Scripts\Managers\PrefabStorage.cs" />
-    <Compile Include="Assets\Scripts\Controllers\Bonus.cs" />
-    <Compile Include="Assets\Scripts\Controllers\Road.cs" />
-    <Compile Include="Assets\Scripts\Controllers\GamePage.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Gameplay\Bonus.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Gameplay\Car.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Gameplay\Road.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Menu\GamePage.cs" />
     <Compile Include="Assets\Scripts\Data\Score.cs" />
-    <Compile Include="Assets\Scripts\Controllers\Car.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Menu\Menu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -628,6 +629,9 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
