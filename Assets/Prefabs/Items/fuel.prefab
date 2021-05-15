@@ -123,3 +123,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 30
+  toSpin: 1
+  spinRateDegrees: 360

@@ -13,20 +13,31 @@ public class GameManager : MonoBehaviour
 
     public void HandleCollision(GameObject gameObject)
     {
-        // Здесь должен быть код, обрабатывающий столкновение
+        if (gameObject.tag == "Obstacle") StopGameWithAccident();
+        else if (gameObject.tag == "Bonus") TakeBonus(gameObject);
     }
 
+    
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+
+    void StopGameWithAccident()
+    {
+            
+    }
+
+    void TakeBonus(GameObject gameObject)
+    {
+        var bonus = gameObject.GetComponent<Bonus>();
+        score.points += bonus.points;
+
+        uiManager.RefreshUI(score);
+        Destroy(gameObject);
     }
 }
